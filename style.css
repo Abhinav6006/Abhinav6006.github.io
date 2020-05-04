@@ -1,0 +1,222 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: url(bg-02.jpg) no-repeat;
+  background-size: cover;
+}
+
+.loader_bg{
+  position: fixed;
+  z-index: 999999;
+  background: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+.loader{
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  /*top:calc(50vh-175px);
+  left: calc(50vh-175px);*/
+  top: 50%;
+  left: 50%;
+  margin: -50px 0px 0px -50px;
+  /*background-position: center;*/
+}
+
+.loader:before,.loader:after{
+   content: '';
+   border: 2em solid #fff;  /*#ff5733;*/
+   border-radius: 50%;
+   width: inherit;
+   height: inherit;
+   position: fixed;
+   /*top: 0;
+   left: 0;*/
+   top: 50%;
+  left: 50%;
+  margin: -50px 0px 0px -50px;
+   animation: loader 2s linear infinite;
+   opacity: 0;
+
+}
+.loader:before{
+  animation-delay: .5s;
+}
+
+@keyframes loader{
+     0%{
+          transform: scale(0);
+          opacity: 0;
+     }
+     50%{
+          opacity: 1;
+     }
+     100%{
+          transform: scale(1);
+          opacity: 0;
+     }
+}
+
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+  border-radius: 70%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.box h6{
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin: 10px;
+}
+.box p{
+  text-align: justify;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #468EEB;
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 70; 
+  font-family: 'Century Gothic',sans-serif;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/*.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: none;
+  color: white;
+  text-align: center;
+}*/
